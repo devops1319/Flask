@@ -1,0 +1,12 @@
+<form  action="{{ url_for('upload') }}" method="post">
+
+    <div>
+        <select class="browser-default custom-select" name= colours method="POST" action="/" >
+            {% for colour in myresult %}
+            <option value= "{{colour}}" SELECTED>{{colour}}</option>"
+            {% endfor %}
+        </select>
+    </div>
+
+<input type="image" src="https://thisisapicture.png" style="height: 45px">
+</form>
